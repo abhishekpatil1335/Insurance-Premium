@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title> Sleep Health And lifestyle </title>
+    <link rel="stylesheet" href="/staticfiles/style.css">
+</head>
+<body>
+
+    <form action="{{url_for ('predict')}}" method="post">
+
+        <input type="text" name="Age" placeholder="Customer Age">
+        <input type="text" name="Sleep Duration" placeholder="time spent sleeping">
+        <input type="text" name="Physical Activity Level" placeholder="exercise an individual">
+        <input type="text" name="Daily Steps" placeholder="physical activity">
+        <input type="text" name="Heart Rate" placeholder="heart beats per minute">
+         
+        <h2> Gender </h2>
+        <select name="Gender" id="g">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        <select>
+
+            <h2> BMI Category </h2>
+        <select name="BMI Category" id="g">
+            <option value="0">Normal</option>
+            <option value="1">Overweight</option>
+        <select>
+
+            <h2> Sleep Disorder </h2>
+        <select name="Sleep Disorder" id="g">
+            <option value="0">Insomnia</option>
+            <option value="1">Sleep Apnea</option>
+            <option value="2">None</option>
+        <select>
+
+            <h2> Occupation </h2>
+        <select name="Occupation" id="g">
+            <option value="0">Software Engineer</option>
+            <option value="1">Doctor</option>
+            <option value="2">Teacher</option>
+            <option value="3">Sales Representative</option>
+            <option value="4">Nurse</option>
+        <select>
+
+            <br>
+            <br>
+            <button type="submit" id="sub">Prediction</button>
+
+            <form>
+
+                <br>
+                <br>
+                {{Prediction_text}}
+
+        <body>
+        <html>
+                    
+        
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
